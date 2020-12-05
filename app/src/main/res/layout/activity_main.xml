@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="horizontal">
+
+        <com.leshnevsky.paintapp.DrawingView
+            android:id="@+id/drawing"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            tools:ignore="NestedWeights" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:orientation="horizontal"
+        android:background="@color/purple_500">
+
+        <SeekBar
+            android:id="@+id/seek_bar_width"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/colorBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:background="@color/purple_500">
+
+        <ImageButton
+            android:id="@+id/draw_btn"
+            style="@style/forImageBtn1"
+            android:src="@drawable/ic_draw"
+            android:onClick="onDraw" />
+
+        <ImageButton
+            android:id="@+id/erase_btn"
+            style="@style/forImageBtn1"
+            android:src="@drawable/ic_erase"
+            android:onClick="onErase"/>
+
+        <ImageButton
+            android:id="@+id/shapes_btn_triangle"
+            style="@style/forImageBtn1"
+            android:src="@drawable/ic_triangle"
+            android:onClick="onTriangleShape"/>
+
+        <ImageButton
+            android:id="@+id/shapes_btn_circle"
+            style="@style/forImageBtn1"
+            android:src="@drawable/ic_circle"
+            android:onClick="onCircleShape"/>
+
+        <ImageButton
+            android:id="@+id/shapes_btn_rectangle"
+            style="@style/forImageBtn1"
+            android:src="@drawable/ic_rectangle"
+            android:onClick="onRectangleShape"/>
+
+        <ImageButton
+            android:id="@+id/palette_btn"
+            style="@style/forImageBtn1"
+            android:src="@drawable/ic_palette" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Рисовалка</string>
+    <string name="mi_clear_text">Очистить</string>
+    <string name="mi_load_text">Загрузить фон</string>
+    <string name="mi_save_text">Сохранить</string>
+</resources>
